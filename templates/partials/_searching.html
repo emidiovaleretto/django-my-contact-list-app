@@ -1,0 +1,20 @@
+<!-- Searching Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <br><br>
+      <form method="get" action="{% url 'search' %}">
+        <div class="form-group row">
+          <div class="col-12">
+            <input class="form-control"
+                   type="search" value="{{ request.GET.term }}"
+                   id="search-input"
+                   placeholder="What are you looking for?"
+                   name="term">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>
